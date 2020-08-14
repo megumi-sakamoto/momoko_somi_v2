@@ -1,0 +1,329 @@
+body{
+  font-family: 'Poiret One', cursive;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul{
+  padding: 0;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.spHeader,#randomImg-sp{
+  display:none;
+}
+
+ /* #randomImg-pc{
+   position: absolute;
+   left: 0;
+   top:0;
+   width: 100vw;
+   height: 100vh;
+   background-position: center center;
+   background-size: cover;
+   opacity: 1;
+   transition: all 1.5s;
+   animation: animate 16s ease-in-out infinite;
+ } */
+
+#randomImg-pc{
+  height: 100vh;
+  overflow: hidden;
+  position: relative; 
+}
+
+.main_img {
+  z-index:10;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-animation: anime 18s 0s infinite;
+  animation: anime 18s 0s infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.main_img:nth-of-type(2) {
+  -webkit-animation-delay: 6s;
+  animation-delay: 6s;
+}
+
+.main_img:nth-of-type(3) {
+  -webkit-animation-delay: 12s;
+  animation-delay: 12s;
+}
+
+@keyframes anime {
+  0% {
+        opacity: 0;
+    }
+
+  17% {
+      opacity: 1;
+  }
+ 
+  35% {
+      opacity: 1;
+  }
+
+  50% {
+      opacity: 0;
+      z-index:9;
+  }
+  100% { 
+    opacity: 0
+  }
+}
+
+
+.pcHeader{
+  opacity: 6;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.header-inner{
+  height: 49px;
+  padding: 20px 30px 10px 30px;
+  border-bottom: solid 1px #fff;
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+
+}
+
+.pcheader-logo{
+  max-width: 150px;
+  width: 100%;
+  margin-right: 50px;
+}
+
+h2{/* liのwidth15%の時は消す */
+  margin: 0;
+  line-height: 50px;
+  text-shadow:0 0 5px #fff;
+}
+
+.pcHeader nav{
+  margin-left: auto;
+  max-width: 800px;
+  width: 100%;
+  align-self: flex-end;
+}
+
+.pcHeader ul{
+  margin: 0;
+}
+
+.pcHeader li{
+  display: inline-block;
+   /*width: 30%; または15% */
+   width: 100px;
+  text-align: center;
+   line-height: 30px;/*width15%の時は消す */
+} 
+
+.pcHeader li a{
+  height: 30px;
+  width: 100%;
+  transition: all .3s;
+  display: inline-block;
+  /* padding: 8px 15px; */
+}
+
+li a:hover{
+  box-shadow: 0 0 3px 2px #fff;
+  background-color: #333;
+  opacity: .8;
+}
+
+
+
+@media screen and (max-width: 740px){
+  .wrapper {
+    padding: 0;
+  }
+
+  .forpc,#randomImg-pc{
+    display: none;
+  }
+  
+  .spHeader {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-family: 'Poiret One', cursive;
+    height: 40px;
+    position: fixed;
+    background-color: black;
+    opacity: 0.7;
+    width: 100%;
+    /* padding: 5px 0; */
+    z-index: 40;
+    transition: .4s;
+  }
+
+  .spHeader h1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 40px;
+    line-height: 40px;
+    margin: 5px 30px;
+    font-size: 24px;
+    font-size: 1.2rem;
+    text-shadow:0 0 2px #fff;
+  }
+
+  
+  #randomImg-sp{
+    display: block;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+  }
+
+
+  .menuButton{
+    display: block;
+    height: 40px;
+    width: 50px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 30;
+  }
+
+  .menuButton div{
+    height: 1px;
+    width: 50%;
+    background-color:#fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: .4s;
+  }
+
+  .menuButton div:nth-last-of-type(1){
+    transform: translate(-50%,-10px);
+  }
+  .menuButton div:nth-last-of-type(3){
+    transform: translate(-50%,10px);
+  }
+
+  .menuButton:hover div:nth-last-of-type(1){
+    transform: translate(-50%,-7px);
+  }
+  .menuButton:hover div:nth-last-of-type(3){
+    transform: translate(-50%,7px);
+  }
+
+  .menuButton.active div:nth-last-of-type(1){
+    transform: rotate(45deg) translate(-50%,0px);
+    transform-origin: 0% 50%;
+  }
+
+  .menuButton.active div:nth-last-of-type(2){
+    opacity: 0;
+  }
+
+  .menuButton.active div:nth-last-of-type(3){
+    transform: rotate(-45deg) translate(-50%,0px);
+    transform-origin: 0% 50%;
+  }
+
+  .menuButton:hover{
+    cursor: pointer;
+  }
+
+
+  .spHeader-menu{
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+    background-color:black;
+    transition: .6s;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 45vw;
+    z-index: 20;
+    overflow: auto;
+    height: 70vh;
+    max-height: 100vh;
+  }
+
+  .spHeader-menu.active{
+    opacity: 1;
+    visibility: visible;
+  }
+
+
+  .spHeader-menu ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .spHeader-menu ul li{
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .spHeader-menu li a{
+    display: block;
+    line-height: 40px;
+    padding: 5px 10px;
+    font-size: 1.2em;
+  }
+
+  .mask{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+  }
+
+  .mask.active{
+    opacity: .8;
+    visibility: visible;
+  }
+
+  .title.active{
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .spHeader.active{
+    background-color: unset;
+  }
+  
+}
