@@ -215,7 +215,7 @@
 } */
 .strp-nav {
   position: absolute;
-  bottom:5px;
+  bottom:0;
   width: 30px;
   height: 30px;
   margin: 0 9px;
