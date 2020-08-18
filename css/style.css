@@ -137,22 +137,12 @@ li a:hover,.tab-wrap a:hover{
   opacity: .8;
 }
 
-#portrait .pcHeader nav ul li:first-child{
+#portrait .pcHeader nav ul li:first-child, #single-portrait .pcHeader nav ul li:first-child{
   border-left: solid 1px #fff;
   border-right: solid 1px #fff;
 }
 
-.portrait-each-2020 .pcHeader nav ul li:first-child{
-  border-left: solid 1px #fff;
-  border-right: solid 1px #fff;
-}
-
-.portrait-each-2020 .link-to-next ul li:first-child{
-  border-left: solid 1px #fff;
-  border-right: solid 1px #fff;
-}
-
-#clothing .pcHeader nav ul li:nth-child(2){
+#clothing .pcHeader nav ul li:nth-child(2),#single-clothing .pcHeader nav ul li:nth-child(2){
   border-left: solid 1px #fff;
   border-right: solid 1px #fff;
 }
@@ -317,6 +307,34 @@ main{
   color: pink;
 }
 
+.explanation{
+  display: inline-block;
+  padding: 15px 0;
+  background-color: rgb(252, 246, 246);
+  box-shadow: unset;
+}
+
+.explanation h3{
+  font-size: 16px;
+  text-align: center;
+  font-weight: normal;
+  border-bottom: #111 solid 1px;
+  margin: 0 10px;
+}
+
+.explanation p{
+  font-size: 13px;
+  padding: 0 15px;
+}
+
+.eng-sub p{
+  margin: 0;
+  font-size: 13px;
+}
+
+.eng-sub p:nth-child(2){
+  margin: 2px 5px;
+}
 
 @media screen and (max-width: 740px){
   body{
@@ -547,6 +565,9 @@ main{
     margin: 10px 1px;
   } */
 
+  #single-clothing .container{
+    column-count: 1;
+  }
 }
 
 @media screen and (max-width: 560px){
