@@ -179,12 +179,12 @@
 
 .strp-position {
   color: #b3b3b3;
-  float: right;
+  /* float: right; */
   line-height: 21px;
   opacity: 0.99;
   position: relative;
-  text-align: right;
-  margin-left: 15px;
+  text-align: center;
+  /* margin-left: 15px; */
   white-space: nowrap;
 }
 
@@ -201,7 +201,7 @@
 
 
 /* < > */
-.strp-nav {
+/* .strp-nav {
   position: absolute;
   top: 50%;
   width: 54px;
@@ -212,8 +212,20 @@
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
+} */
+.strp-nav {
+  position: absolute;
+  bottom:5px;
+  width: 30px;
+  height: 30px;
+  margin: 0 9px;
+  /* margin-top: -36px; */
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
-.strp-nav-previous { left: 0; }
+.strp-nav-previous {left: 0;}
 .strp-nav-next { right: 0; left: auto; }
 
 .strp-nav-disabled { cursor: default; }
@@ -353,7 +365,7 @@
 .strp-window-skin-strip .strp-nav-previous .strp-nav-button-icon { background-image: url('../img/previous.svg');  }
 .strp-window-skin-strip .strp-nav-next .strp-nav-button-icon { background-image: url('../img/next.svg'); }
 /* IE7-8/no-svg (using a faded png) */
-.strp-window-skin-strip.strp-no-svg .strp-nav-previous .strp-nav-button-icon { background-image: url('../img/previous-faded.png'); opacity: 1; }
+.strp-window-skin-strip.strp-no-svg .strp-nav-previous .strp-nav-button-icon { background-image: url('../img/previous-faded.png'); opacity: .5; }
 .strp-window-skin-strip.strp-no-svg .strp-nav-next .strp-nav-button-icon { background-image: url('../img/next-faded.png'); opacity: 1; }
 
 .strp-window-skin-strip .strp-nav .strp-nav-button-icon { opacity: .6; } /* normal state */
