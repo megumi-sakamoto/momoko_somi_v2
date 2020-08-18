@@ -230,8 +230,8 @@
 }
 /* .strp-nav-previous {left: 0;}
 .strp-nav-next { right: 0; left: auto; } */
-.strp-nav-previous {left: 150px;}
-.strp-nav-next { right: 150px; left: auto; }
+.strp-nav-previous {left: 25%;}
+.strp-nav-next { right: 25%; left: auto; }
 
 .strp-nav-disabled { cursor: default; }
 
