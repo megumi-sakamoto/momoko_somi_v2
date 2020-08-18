@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clothing:Momoko Somi</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body id="about">
+  <header>
+  <!-- spヘッダー -->
+  <div class="spHeader" id="spHeader">
+    <div class="title" id="title">
+      <a href="index.html"><h1>Momoko Somi</h1></a>
+      <a href="About.html"><h3>about</h3></a>
+    </div>
+    <div class="mask" id="mask"></div>
+    <a class="menuButton" id="menuButton">
+      <div></div>
+      <div></div>
+      <div></div>
+    </a>
+    <nav class="spHeader-menu" id="spHeader-menu">
+      <ul>
+        <li><a href="Portrait.html">Portrait</a></li>
+        <li><a href="Clothing.html">Clothing</a></li>
+        <li><a href="Film.html">Film</a></li>
+        <li><a href="Landscape.html">Landscape</a></li>
+        <li><a href="Projects.html">Projects</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- pcヘッダー -->
+  <div class="pcHeader forpc">
+    <div class="header-inner forpc">
+      <a class="pcheader-logo" href="index.html"><h2>Momoko Somi</h2></a>
+      <nav>
+          <ul>
+            <li><a href="Portrait.html">Portrait</a></li>
+            <li><a href="Clothing.html">Clothing</a></li>
+            <li><a href="Film.html">Film</a></li>
+            <li><a href="Landscape.html">Landscape</a></li>
+            <li><a href="Projects.html">Projects</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+          </ul>
+      </nav>
+    </div>
+  </div>
+  </header>
+   <!-- 下層への画像リンクが集まったタブ -->
+  <main>     	
+    <div class="tab-wrap">
+      <input id="TAB-01" type="radio" name="TAB" class="tab-switch" checked="checked"/><label class="tab-label" for="TAB-01"><a>Profile</a></label>
+      <div class="tab-content">       
+        <div class="about-wrap">
+          <img src="img/about.JPG" alt="プロフィール写真">
+          <section class="about-text">
+            <h2>澤海 萌々子</h2>
+            <p>(どこかにあった文章) アナログ、デジタルを問わず、トイカメラやポラロイド、ビデオカメラに到るまで、あらゆるカメラに夢中になって遊んでいるうちに自然とカメラマンとしての道を志すようになる。</p>
+            <div class="eng-sub">
+              <p>-Momoko Somi-</p>
+              <p>Based in Tokyo, Japan.</p>
+              <a href="https://www.instagram.com/moepejic/"><i class="fab fa-instagram"></i> instagram</a>
+            </div>
+          </section>
+        </div>
+      </div>
+      <input id="TAB-02" type="radio" name="TAB" class="tab-switch" /><label class="tab-label" for="TAB-02"><a>Gear I use</a></label>
+      <div class="tab-content">
+        <div class="container">
+        <p>使用機材？それか別タブで他に書きたいこと。なくてもOK</p>
+        </div>
+      </div>
+    </div>
+  </main>
+<script src="js/my.script.js"></script>
+</body>
+</html>
