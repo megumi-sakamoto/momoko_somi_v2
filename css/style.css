@@ -6,6 +6,7 @@ body{
   background-color: #333;
 }
 
+
 ul{
   padding: 0;
 }
@@ -17,6 +18,10 @@ li{
 a{
   text-decoration: none;
   color: white;
+}
+
+h1,h2,h3,h4{
+  font-weight: normal;
 }
 
 .spHeader,#randomImg-sp,.formobile{
@@ -137,6 +142,11 @@ li a:hover,.tab-wrap a:hover{
   opacity: .8;
 }
 
+#about .tab-wrap a:hover{
+  background-color: unset;
+  border-bottom: solid 1px #111;
+}
+
 #portrait .pcHeader nav ul li:first-child, #single-portrait .pcHeader nav ul li:first-child{
   border-left: solid 1px #fff;
   border-right: solid 1px #fff;
@@ -172,8 +182,12 @@ li a:hover,.tab-wrap a:hover{
   border-right: solid 1px #fff;
 }
 
-#portrait .header-inner{
+.header-inner{
   background-color:#333;
+}
+
+#index .header-inner{
+  background-color: unset;
 }
 
 main{
@@ -209,7 +223,7 @@ main{
 .link-image{
   position: relative;
   display: inline-block; 
-  box-shadow: 0 0 3px 2px #fff;
+  box-shadow: 0 0 1px 1px #fff;
   margin:10px 10px;
   transition: .4s;
 }
@@ -290,9 +304,9 @@ main{
   display: none;
 }
 
-#single-portrait .link-image{
+/* #single-portrait .link-image,#single-clothing .link-image{
   box-shadow: unset;
-}
+} */
 
 .slider{
   margin: 100px auto;
@@ -317,7 +331,6 @@ main{
 .explanation h3{
   font-size: 16px;
   text-align: center;
-  font-weight: normal;
   border-bottom: #111 solid 1px;
   margin: 0 10px;
 }
@@ -334,6 +347,31 @@ main{
 
 .eng-sub p:nth-child(2){
   margin: 2px 5px;
+}
+
+#about .tab-content{
+  max-width: 800px;
+  width: 100%;
+  background-color: rgb(252, 246, 246);
+  margin: 20px 60px 0 60px; 
+}
+
+.about-wrap{
+ max-width: 100%;
+  display: flex;
+}
+
+.about-text{
+  padding: 0 15px;
+}
+
+.about-wrap img{
+  padding: 10px;
+}
+
+.about-wrap a{
+  color: #111;
+  display: inline;
 }
 
 @media screen and (max-width: 740px){
@@ -568,11 +606,34 @@ main{
   #single-clothing .container{
     column-count: 1;
   }
+
+  #about .tab-content{
+    background-color: unset;
+    box-shadow: 2px 2px 3px 2px  rgb(121, 119, 119);
+    margin: 20px 20px 0 20px; 
+  }
+
+  .about-wrap img{
+    width: 30%;
+    height: 30%;
+  }
 }
 
 @media screen and (max-width: 560px){
   .tab-label {
     letter-spacing: 0;
     padding: 0 5px;
+  }
+
+  .about-wrap{
+    padding: 20px 0;
+  }
+
+  .about-wrap img{
+   margin: 30px 10px;
+  }
+
+  .about-wrap h2{
+    line-height: unset;
   }
 }
