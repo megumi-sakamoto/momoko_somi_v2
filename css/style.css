@@ -196,8 +196,18 @@ main{
   width: 100%;
   vertical-align: bottom;
 } 
+/* 全画面 */
+.container {
+  margin: 0 auto;
+  padding:5px 5px;
+  /* width: 100%; */
+  column-count: 3;
+  column-gap: 0;
 
-/* .container {
+}
+
+/* 全画面 */
+/* #single-portrait .container {
   margin: 0 auto;
   padding:5px 5px;
   width: 100%;
@@ -205,15 +215,6 @@ main{
   column-gap: 0;
 
 } */
-
-#single-portrait .container {
-  margin: 0 auto;
-  padding:5px 5px;
-  width: 100%;
-  column-count: 3;
-  column-gap: 0;
-
-}
 
 .link-image{
   position: relative;
@@ -297,10 +298,6 @@ main{
 /* ラジオボタン非表示 */
 .tab-switch {
   display: none;
-}
-
-#single-portrait .container{
-  column-count: 3;
 }
 
 #single-portrait .link-image{
@@ -522,7 +519,7 @@ main{
     padding: 0 10px;
     border-right: solid 1px #fff;
   }
-
+  /* 740px以下 */
   #portrait .container {
     column-count: 2;
     padding: 0;
