@@ -220,6 +220,7 @@
   height: 30px;
   margin: 0 9px;
   /* margin-top: -36px; */
+  /* margin-bottom: 5px; */
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -373,7 +374,7 @@
 
 /* < > : hover */
 .strp-window-skin-strip .strp-nav:hover .strp-nav-button-icon,
-.strp-window-skin-strip .strp-nav-hover .strp-nav-button-icon { opacity: 1; }
+.strp-window-skin-strip .strp-nav-hover .strp-nav-button-icon { opacity: .8; }
 /* IE7-8/no-svg (unfaded png) */
 .strp-window-skin-strip.strp-no-svg .strp-nav.strp-nav-previous:hover .strp-nav-button-icon,
 .strp-window-skin-strip.strp-no-svg .strp-nav-hover.strp-nav-previous .strp-nav-button-icon { background-image: url('../img/previous.png'); }
@@ -384,10 +385,12 @@
 @media all and (max-width: 375px) and (orientation: portrait),
        all and (max-height: 375px) and (max-width: 667px) {
   .strp-window-skin-strip .strp-nav {
-    width: 48px;
-    height: 60px;
+    /* width: 48px;
+    height: 60px; */
+    width: 30px;
+    height: 30px;
     margin: 0 5px;
-    margin-top: -30px;
+    /* margin-top: -30px; */
   }
 
   /* < > */
