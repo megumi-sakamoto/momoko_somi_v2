@@ -197,7 +197,16 @@ main{
   vertical-align: bottom;
 } 
 
-.container {
+/* .container {
+  margin: 0 auto;
+  padding:5px 5px;
+  width: 100%;
+  column-count: 3;
+  column-gap: 0;
+
+} */
+
+#single-portrait .container {
   margin: 0 auto;
   padding:5px 5px;
   width: 100%;
@@ -514,7 +523,7 @@ main{
     border-right: solid 1px #fff;
   }
 
-  .container {
+  #portrait .container {
     column-count: 2;
     padding: 0;
   }
