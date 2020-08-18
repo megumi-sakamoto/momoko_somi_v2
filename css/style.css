@@ -520,7 +520,7 @@ main{
     border-right: solid 1px #fff;
   }
   /* 740px以下 */
-  #portrait .container {
+  .container {
     column-count: 2;
     padding: 0;
   }
