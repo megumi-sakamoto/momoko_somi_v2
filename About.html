@@ -58,25 +58,44 @@
   <main>     	
     <div class="tab-wrap">
       <input id="TAB-01" type="radio" name="TAB" class="tab-switch" checked="checked"/><label class="tab-label" for="TAB-01"><a>Profile</a></label>
-      <div class="tab-content">       
-        <div class="about-wrap">
+      <div class="tab-content">
+        <!-- pc画面用        -->
+        <div class="about-wrap forpc">
           <img src="img/about.JPG" alt="プロフィール写真">
-          <section class="about-text">
+          <section>
             <h2>澤海 萌々子</h2>
-            <p>(どこかにあった文章) アナログ、デジタルを問わず、トイカメラやポラロイド、ビデオカメラに到るまで、あらゆるカメラに夢中になって遊んでいるうちに自然とカメラマンとしての道を志すようになる。</p>
             <div class="eng-sub">
               <p>-Momoko Somi-</p>
               <p>Based in Tokyo, Japan.</p>
-              <a href="https://www.instagram.com/moepejic/"><i class="fab fa-instagram"></i> instagram</a>
             </div>
+            <p  class="about-text">(どこかにあった文章) アナログ、デジタルを問わず、トイカメラやポラロイド、ビデオカメラに到るまで、あらゆるカメラに夢中になって遊んでいるうちに自然とカメラマンとしての道を志すようになる。</p>
+            <a href="https://www.instagram.com/moepejic/"><i class="fab fa-instagram"></i> instagram</a>
           </section>
+          
+        </div>
+         <!-- sp画面用        -->
+        <div class="about-wrap formobile">
+          <div class="about-top">
+            <img src="img/about_sp.JPG" alt="プロフィール写真">
+            <section class="about-top-text">
+              <h2>澤海 萌々子</h2>
+              <div class="eng-sub">
+                <p>-Momoko Somi-</p>
+                <p>Based in Tokyo, Japan.</p>
+              </div>
+              <div class="instagram">    
+                <a href="https://www.instagram.com/moepejic/"><i class="fab fa-instagram"></i> instagram</a>
+              </div>
+            </section>
+          </div>
+          <div class="about-text">
+            <p>(どこかにあった文章) アナログ、デジタルを問わず、トイカメラやポラロイド、ビデオカメラに到るまで、あらゆるカメラに夢中になって遊んでいるうちに自然とカメラマンとしての道を志すようになる。</p>
+          </div>
         </div>
       </div>
       <input id="TAB-02" type="radio" name="TAB" class="tab-switch" /><label class="tab-label" for="TAB-02"><a>Gear I use</a></label>
       <div class="tab-content">
-        <div class="container">
         <p>使用機材？それか別タブで他に書きたいこと。なくてもOK</p>
-        </div>
       </div>
     </div>
   </main>
