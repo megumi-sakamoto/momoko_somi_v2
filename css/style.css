@@ -144,7 +144,7 @@ li a:hover,.tab-wrap a:hover{
 
 #about .tab-wrap a:hover{
   background-color: unset;
-  border-bottom: solid 1px #111;
+  border-bottom: unset;
 }
 
 #portrait .pcHeader nav ul li:first-child, #single-portrait .pcHeader nav ul li:first-child{
@@ -359,11 +359,14 @@ main{
 .about-wrap{
  max-width: 100%;
   display: flex;
+  text-align: center;
 }
 
 .about-text{
-  padding: 0 15px;
+  padding: 20px 15px;
+  text-align: left;
 }
+
 
 .about-wrap img{
   padding: 10px;
@@ -371,7 +374,13 @@ main{
 
 .about-wrap a{
   color: #111;
-  display: inline;
+  display: inline-block;
+  width: unset;
+  border-bottom: solid 1px #333;
+}
+
+#about .tab-content .formobile{
+  display: none;
 }
 
 @media screen and (max-width: 740px){
@@ -613,9 +622,26 @@ main{
     margin: 20px 20px 0 20px; 
   }
 
+  .about-wrap{
+    padding: 20px;
+  }
+
+  #about .tab-content .formobile{
+    display: block;
+  }
+  
   .about-wrap img{
     width: 30%;
     height: 30%;
+  }
+
+  .about-top{
+    display: flex;
+    margin: 20px 20px 0 20px ;
+    justify-content: center;
+  }
+  .about-top-text .eng-sub{
+    padding: 15px 0;
   }
 }
 
@@ -626,14 +652,18 @@ main{
   }
 
   .about-wrap{
-    padding: 20px 0;
-  }
-
-  .about-wrap img{
-   margin: 30px 10px;
+    padding: 20px 0 0;
   }
 
   .about-wrap h2{
     line-height: unset;
+  }
+
+  .about-top{
+    margin-bottom: 0;
+  }
+
+  .about-wrap img{
+    border-radius: 50%;
   }
 }
