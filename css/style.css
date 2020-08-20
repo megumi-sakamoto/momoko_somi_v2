@@ -394,7 +394,8 @@ main{
 .contact-wrap .eng-sub{
   margin-top: 45px;
 }
-footer{
+
+.footer-pc{
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -676,6 +677,12 @@ footer{
 
   #index footer{
     color: #fff;
+  }
+
+  .footer-sp{
+    background-color: #111;
+    opacity: .9;
+    text-align: center;
   }
 
 }
