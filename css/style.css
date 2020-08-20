@@ -638,6 +638,10 @@ footer{
     column-count: 1;
   }
 
+  #about .tab-wrap{
+    margin: 0;
+  }
+
   #about .tab-content{
     background-color: unset;
     box-shadow: 2px 2px 3px 2px  rgb(121, 119, 119);
