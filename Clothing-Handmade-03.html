@@ -2,11 +2,17 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex,follow" />
+  <link rel="apple-touch-icon-precomposed" href="img/touch_icon.JPG" />
   <title>Handmade-03:Momoko Somi</title>
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- strip -->
+  <script type="text/javascript" src="js/strip.pkgd.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/strip.css"/>
 </head>
 <body id="single-clothing" class="handmade-03">
   <header>
@@ -55,45 +61,42 @@
   </header>
    <!-- 日別の画像all-->
   <main>
-    <ul class="container">
+    <ul class="container forpc">
       <li>
-        <a href="img/handmade3-1.JPG" class="grid link-image"><img src="img/handmade3-1.JPG" alt="Handmade3-1枚目"></a>
+        <a href="img/handmade3-1.JPG" class="strip grid link-image" data-strip-group="mygroup"><img src="img/handmade3-1.JPG" alt="Handmade3-1枚目"></a>
       </li>
       <li>
-        <a href="img/handmade3-2.JPG" class="grid link-image"><img src="img/handmade3-2.JPG" alt="Handmade3-2枚目"></a>
+        <a href="img/handmade3-2.JPG" class="strip grid link-image" data-strip-group="mygroup"><img src="img/handmade3-2.JPG" alt="Handmade3-2枚目"></a>
       </li>
-      <div class="explanation grid link-image">
-        <h3>白いパジャマ</h3>
-        <p>パジャマ用に作りましたがパジャマにはもったいないです。(説明できてなくて草)</p>
-        <div class="eng-sub">
-          <p>White night wear</p>
-          <p>It's way too cute for nigh wear!</p>
+      <li>
+        <div class="explanation grid link-image">
+          <h3>白いパジャマ</h3>
+          <p>パジャマ用に作りましたがパジャマにはもったいないです。(説明できてなくて草)</p>
+          <div class="eng-sub">
+            <p>-White night wear-</p>
+            <p>It's way too cute for night wear!</p>
+          </div>
         </div>
-      </div>
+      </li>
     </ul>
-      
-    <!--    
-     <div class="container">
-      <div class="grid link-image">
-        <img src="img/photograph-2020-01-01.jpg" alt="2020-01-1枚目">
-      </div>
-      <div class="grid link-image">
-        <img src="img/photograph-2020-01-02_pc.jpg" alt="2020-01-2枚目">
-      </div>
-      <div class="grid link-image">
-        <img src="img/photograph-2020-01-03.jpg" alt="2020-01-3枚目">
-      </div>
-      <div class="grid link-image">
-        <img src="img/photograph-2020-01-04.jpg" alt="2020-01-4枚目">
-      </div>
-      <div class="grid link-image">
-        <img src="img/photograph-2020-01-05.jpg" alt="2020-01-5枚目">
-      </div>
-      <div class="grid link-image">
-        <img src="img/photograph-2020-01-06.jpg" alt="2020-01-6枚目">
-      </div>
-     </div>
-   </div> -->
+    <ul class="container formobile">
+      <li>
+        <a href="img/handmade3-1.JPG" class="grid link-image"><img src="img/handmade3-1.JPG" alt="Handmade2-1枚目"></a>
+      </li>
+      <li>
+        <a href="img/handmade3-2.JPG" class="grid link-image"><img src="img/handmade3-2.JPG" alt="Handmade2-2枚目"></a>
+      </li>
+      <li>
+        <div class="explanation grid link-image">
+          <h3>白いパジャマ</h3>
+          <p>パジャマ用に作りましたがパジャマにはもったいないです。(説明できてなくて草)</p>
+          <div class="eng-sub">
+            <p>-White night wear-</p>
+            <p>It's way too cute for night wear!</p>
+          </div>
+        </div>
+      </li>
+    </ul>
   </main>
  <script src="js/my.script.js"></script>
 </body>
