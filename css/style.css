@@ -42,12 +42,24 @@ h1,h2,h3,h4{
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  /* background-size: contain; */
   position: absolute;
   left: 0;
   top: 0;
   -webkit-animation: anime 18s 0s infinite;
   animation: anime 18s 0s infinite;
   animation-timing-function: ease-in-out;
+}
+/* 表示位置対策 */
+
+.pcImage .main_img:nth-of-type(1){
+  background-position: unset;
+  background-position: 0 25%;
+} 
+
+.pcImage .main_img:nth-of-type(3){
+background-position: unset;
+background-position: 0 -150px;
 }
 
 .main_img:nth-of-type(2) {
