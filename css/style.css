@@ -418,7 +418,7 @@ main{
   -ms-transform: translateX(-50%);
 }
 
-.film-2020-02 .link-image{
+.film-2020-02 .link-image,#film .link-image{
   display: block;
   /*サムネイルの画像が増えたら消す*/
 }
