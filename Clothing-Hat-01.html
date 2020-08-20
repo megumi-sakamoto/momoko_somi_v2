@@ -2,14 +2,19 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex,follow" />
+  <link rel="apple-touch-icon-precomposed" href="img/touch_icon.JPG" />
   <title>Hat-01:Momoko Somi</title>
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <!-- strip -->
-</head>
-<body id="single-clothing" class="hat-01">
+  <script type="text/javascript" src="js/strip.pkgd.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/strip.css"/>
+ </head>
+ <body id="single-clothing" class="hat-01">
   <header>
   <!-- spヘッダー -->
   <div class="spHeader" id="spHeader">
@@ -56,36 +61,42 @@
   </header>
    <!-- 日別の画像all-->
   <main>
-    <ul class="container">
+    <ul class="container forpc">
       <li>
-        <a href="img/hat1-1.JPG" class="grid link-image"><img src="img/hat1-1.JPG" alt="Hat-1-1枚目"></a>
+        <a href="img/hat1-1.JPG" class="strip grid link-image" data-strip-group="mygroup"><img src="img/hat1-1.JPG" alt="Hat1-1枚目"></a>
       </li>
       <li>
-        <a href="img/hat1-2.JPG" class="grid link-image"><img src="img/hat1-2.JPG" alt="Hat-1-2枚目"></a>
+        <a href="img/hat1-2.JPG" class="strip grid link-image" data-strip-group="mygroup"><img src="img/hat1-2.JPG" alt="Hat3-2枚目"></a>
+      </li>
+      <li>
+        <div class="explanation grid link-image">
+          <h3>色んなお花の麦わら帽子</h3>
+          <p>撮影日の前日に夜なべして、花とリボンで飾り付けました。</p>
+          <div class="eng-sub">
+            <p>-Straw hat with dried flowers and a ribbon -</p>
+            <p>I spent all night long to decolate it before the day of the shooting!</p>
+          </div>
+        </div>
       </li>
     </ul>
-    <!--    
-     <div class="container">
-      <div class="grid link-image">
-        <img src="img/photograph-2020-01-01.jpg" alt="2020-01-1枚目">
-      </div>
-      <div class="grid link-image">
-        <img src="img/photograph-2020-01-02_pc.jpg" alt="2020-01-2枚目">
-      </div>
-      <div class="grid link-image">
-        <img src="img/photograph-2020-01-03.jpg" alt="2020-01-3枚目">
-      </div>
-      <div class="grid link-image">
-        <img src="img/photograph-2020-01-04.jpg" alt="2020-01-4枚目">
-      </div>
-      <div class="grid link-image">
-        <img src="img/photograph-2020-01-05.jpg" alt="2020-01-5枚目">
-      </div>
-      <div class="grid link-image">
-        <img src="img/photograph-2020-01-06.jpg" alt="2020-01-6枚目">
-      </div>
-     </div>
-   </div> -->
+    <ul class="container formobile">
+      <li>
+        <a href="img/hat1-1.JPG" class="grid link-image"><img src="img/hat1-1.JPG" alt="Hat1-1枚目"></a>
+      </li>
+      <li>
+        <a href="img/handmade1-2.JPG" class="grid link-image"><img src="img/hat1-2.JPG" alt="Hat1-2枚目"></a>
+      </li>
+      <li>
+        <div class="explanation grid link-image">
+          <h3>色んなお花の麦わら帽子</h3>
+          <p>撮影日の前日に夜なべして、花とリボンで飾り付けました。</p>
+          <div class="eng-sub">
+            <p>-Straw hat with dried flowers and a ribbon -</p>
+            <p>I spent all night long to decolate it before the day of the shooting!</p>
+          </div>
+        </div>
+      </li>
+    </ul>
   </main>
  <script src="js/my.script.js"></script>
 </body>
