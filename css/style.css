@@ -373,6 +373,7 @@ main{
  max-width: 100%;
   display: flex;
   text-align: center;
+  padding-bottom: 10px;
 }
 
 .about-text{
@@ -399,6 +400,11 @@ main{
 .about-text th,td{
   text-align: left;
 } 
+
+.about-text th{
+  letter-spacing: 0px;
+}
+
 
 .contact-wrap{
   background-color: rgb(252, 246, 246);
